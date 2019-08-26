@@ -43,7 +43,7 @@ validation_steps = 250)
 # Part 3 - Making new predictions
 import numpy as np
 from keras.preprocessing import image
-test_image = image.load_img('data/training_test/tidak_kebakaran/tidak_kebakaran_0001.jpg', target_size = (64, 64))
+test_image = image.load_img('data/training_test/kebakaran/kebakaran_0650.jpg', target_size = (64, 64))
 test_image = image.img_to_array(test_image)
 test_image = np.expand_dims(test_image, axis = 0)
 result = classifier.predict(test_image)
